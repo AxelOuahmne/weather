@@ -1,0 +1,51 @@
+div.container {
+    text-align: center;
+    display: flex;
+    background-color: rgba(250,250,250 ,0.3);
+    margin-top: 1rem;
+    color: white;
+}
+.weaterInfo{
+    align-items: center;
+    min-height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tem ,.time{
+    font-size: 3rem;
+    display: flex;
+    gap: 20px;
+}
+.time{
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+.PositionSvg {
+    color: red !important;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 20vw;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 7px;
+    padding: 0.2rem ;
+    margin-top: 5px;
+    font-size: 11px;
+}
+.sep {
+    margin: 10px 0px;
+    border-top: 1px solid rgba(250,250,250 ,0.3);
+}
+.sep_r {
+    border-right: 3px solid rgba(250,250,250 ,0.3);
+    padding-right: 3rem;
+    height: 100%;
+}

@@ -1,0 +1,10 @@
+.Wallpaper {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.4;
+    filter: blur(2px);
+}
+.Wallpaper-container {
+    z-index: -1;
+    background-color: #000;
+}

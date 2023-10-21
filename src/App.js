@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { Container } from 'react-bootstrap';
 import './App.css';
+import SearchBar from './Components/SearchBar/SearchBar';
+import Wallpaper from './Components/Wallpaper/Wallpaper';
+import Weather from './Components/Weather/Weather';
+import { store } from './App/store';
+import { Provider } from 'react-redux' ;
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Provider  store={store}>
+     <Container>
+              <Wallpaper />
+             <SearchBar />
+              <Weather />
+        </Container>
+     </Provider>
     </div>
+
   );
 }
 
